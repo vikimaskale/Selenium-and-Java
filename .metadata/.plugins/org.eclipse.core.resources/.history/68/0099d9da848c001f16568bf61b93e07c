@@ -1,0 +1,10 @@
+package com.courierServiceManagement.entity;
+
+import java.util.ArrayList;
+
+public interface ICourierUserService {
+	public long placeOrder();
+	public String getOrderStatus();
+	public boolean cancelOrder();
+	public ArrayList<Courier>getAssignedOrder();
+}

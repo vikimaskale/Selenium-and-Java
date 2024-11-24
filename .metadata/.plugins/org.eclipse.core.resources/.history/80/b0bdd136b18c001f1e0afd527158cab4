@@ -1,0 +1,12 @@
+package com.courierServiceManagement.main;
+
+import java.util.ArrayList;
+
+import com.courierServiceManagement.entity.CourierCompany;
+
+public class MainMod {
+	public static void main(String[] args) {
+		CourierCompany companyObj=new CourierCompany("hexaware", new ArrayList<>(),
+				new ArrayList<>, new ArrayList<>);
+	}
+}

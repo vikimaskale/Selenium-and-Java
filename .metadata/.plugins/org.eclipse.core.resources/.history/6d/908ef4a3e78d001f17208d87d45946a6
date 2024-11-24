@@ -1,0 +1,20 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DemoShop {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\JAVA_WS\\orangeHRM\\src\\test\\resources\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		driver.navigate().to("https://demowebshop.tricentis.com/login");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		
+		//adding mail and password
+		driver.findElement(By.name("Email")).sendKeys("surajdevapure@gmail.com");
+		driver.findElement(By.name("Password")).sendKeys("suraj123");
+		
+		driver.findElement(By.xpath("//input [@class= 'button-1 login-button']")).click();
+	}
+}

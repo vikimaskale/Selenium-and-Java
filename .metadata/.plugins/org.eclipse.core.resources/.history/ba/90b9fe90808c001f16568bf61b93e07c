@@ -1,0 +1,13 @@
+package com.courierServiceManagement.entity;
+
+public class Courier {
+	private long courierID;
+	private String senderName;
+	private String senderAddress;
+	private String receiverName;
+	private String receiverAddress;
+	private float weight;
+	private String status;
+	private long trackingNumber;
+	private 
+}

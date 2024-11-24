@@ -1,0 +1,31 @@
+package com.hexaware.main;
+
+import com.hexaware.entity.Employee;
+import com.hexaware.entity.Manager;
+import com.hexaware.entity.Person;
+
+public class MainMod {
+
+	public static void main(String[] args) {
+		Person personObj= new Person(); //call to default constructor
+		System.out.println(personObj);
+		personObj.setAadhaarNumber(20001333244555L);
+		personObj.setName("Haritha");
+		personObj.setAge(25);
+		personObj.setAddress("Third cross Road, Thousand lights, Chennai");
+		System.out.println(personObj);
+		
+		//Parameterized constructor
+		Person person2= new Person(797979L, "Harish", 32, "HH Street, Bangalore");
+		
+		
+		Employee employeeObj= new Employee(100,"manager", 1797778L, "Sharul", 38, "ABC Street Texas");
+		System.out.println(employeeObj);
+		
+		Manager managerObj= new Manager(101, "manager", 9384798780L, "Rajni", 40, "Ghansoli, Mumbai",
+				"Meta project", 50000);
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.courierServiceManagement.entity;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Practice {
+	public static void main(String[] args) throws ParseException {
+		Scanner scn= new Scanner(System.in);
+		SimpleDateFormat sdt= new SimpleDateFormat("dd/mm/yyyy");
+		String date= scn.next();
+		Date d=sdt.parse(date);
+		System.out.println(sdt.format(d));
+	}
+}

@@ -1,0 +1,11 @@
+package com.courierServiceManagement.entity;
+
+import java.util.Date;
+
+public class Practice {
+	public static void main(String[] args) {
+		SimpleDateFormat sdt=new Si
+		Date d= new Date (2000,10,23);
+		System.out.println(d);
+	}
+}

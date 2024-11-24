@@ -1,0 +1,5 @@
+package com.hexa.abstractclass;
+
+abstract class BankService {
+	abstract float checkBalance(long accountNumber);
+}

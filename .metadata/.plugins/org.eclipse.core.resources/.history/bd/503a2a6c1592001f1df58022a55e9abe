@@ -1,0 +1,13 @@
+package com.testng.demoproject;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class SignInPage {
+	//declaration
+	@FindBy(xpath="//a[@class='ico-login']")
+	WebElement btnLogIn;
+	
+	@FindBy(xpath="//a[@class='ico-login']")
+	WebElement btnLogIn;
+}

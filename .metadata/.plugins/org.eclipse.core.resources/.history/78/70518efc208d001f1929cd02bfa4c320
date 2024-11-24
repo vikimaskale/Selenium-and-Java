@@ -1,0 +1,16 @@
+package com.hexaware.main;
+
+import java.sql.SQLException;
+
+import com.hexaware.dao.UserServiceImpl;
+import com.hexaware.entity.User;
+
+public class MainMod {
+	public static void main(String[] args) throws SQLException {
+		UserServiceImpl obj=new UserServiceImpl();
+		
+//		User(int userId, String userName, String password, String email)
+		User user1=new User(1, "Viki", "root", "viki@gmail.com");
+		obj.createUser(user1);
+	}
+}

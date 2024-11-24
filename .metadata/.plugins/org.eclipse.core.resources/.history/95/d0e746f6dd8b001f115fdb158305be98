@@ -1,0 +1,26 @@
+package com.hexaware.assignment4;
+
+public class BankAccount {
+	private String accountNo;
+	private String accountName;
+	private long balance;
+	
+	public BankAccount() {
+		
+	}
+
+	public BankAccount(String accountNo, String accountName, long balance) {
+		super();
+		this.accountNo = accountNo;
+		this.accountName = accountName;
+		this.balance = balance;
+	}
+	
+	public BankAccount(String accountNo, String accountName) {
+		super();
+		this.accountNo = accountNo;
+		this.accountName = accountName;
+		this.balance= 1000;
+	}
+	
+}

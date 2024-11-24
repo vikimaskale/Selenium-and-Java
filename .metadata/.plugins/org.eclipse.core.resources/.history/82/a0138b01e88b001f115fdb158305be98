@@ -1,0 +1,19 @@
+package com.hexaware.assignment4;
+
+public class Main {
+	public static void main(String[] args) {
+		Bank bank= new Bank(3);
+		BankAccount account1=bank.createBankAccount("Vikram", 2000);
+		BankAccount account2=bank.createBankAccount("Raj", 1000);
+		BankAccount account3=bank.createBankAccount("Rajas", 3000);
+		
+		System.out.println(bank.checkAccount("3")); 
+		System.out.println(bank.checkAccount("6"));
+	
+		System.out.println(bank.getBalance(account1));
+		System.out.println(bank.depositMoney(account1, 1000));
+		System.out.println();
+		
+		
+	}
+}

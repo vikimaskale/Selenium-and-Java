@@ -1,0 +1,76 @@
+package com.testng.demoproject;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class TestCase {
+	
+	WebDriver driver;
+	
+	@BeforeClass
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\JAVA_WS\\orangeHRM\\src\\test\\resources\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.navigate().to("https://demowebshop.tricentis.com/register");
+	}
+	
+	
+	@DataProvider
+	public Object[][] getData(){
+		Object[][] data=new Object[1][6];
+		data[0][0]="male";
+		data[0][1]="vdm11";
+		data[0][2]="vdm12";
+		data[0][3]="vdm14@gmail.com";
+		data[0][4]="vdm111";
+		data[0][5]="vdm111";
+		
+//		data[1][0]="male";
+//		data[1][1]="vdm11";
+//		data[1][2]="vdm12";
+//		data[1][3]="vdm13@gmail.com";
+//		data[1][4]="vdm111";
+//		data[1][5]="vdm111";
+		return data;
+	}
+	
+	@Test(priority=0, dataProvider="getData")
+	public void registerUserTest(String gender, String fname, String lname, String email,
+			String password, String conPassword) throws InterruptedException {
+
+		RegistrationPage register=new RegistrationPage(driver);
+		register.enterGender(gender);
+		register.enterFirstNameText(fname);
+		register.enterLastNameText(lname);
+		register.enterEmailText(email);
+		register.enterPasswordText(password);
+		register.enterConfPasswordText(conPassword);
+		register.clickRegisterButton();
+		signInTest(email,password);
+		Thread.sleep(4000);
+	}
+	
+	@Test()
+	public void signInTest(String email, String password) throws InterruptedException {
+		SignInPage signInPage=new SignInPage(driver);
+		signInPage.goToLogInPage();
+		signInPage.setEmail(email);
+		signInPage.setPassword(password);
+		signInPage.clickLogInBtn();
+		Thread.sleep(4000);
+	}
+	
+	
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
+}

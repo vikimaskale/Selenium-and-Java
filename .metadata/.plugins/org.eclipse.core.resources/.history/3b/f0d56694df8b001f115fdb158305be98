@@ -1,0 +1,5 @@
+package com.hexaware.assignment4;
+
+public interface IBankServiceProvider {
+
+}

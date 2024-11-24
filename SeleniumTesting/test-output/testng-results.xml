@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-25T09:18:26 IST" name="Suite" finished-at="2024-10-25T09:19:30 IST" duration-ms="63714">
+    <groups>
+    </groups>
+    <test started-at="2024-10-25T09:18:26 IST" name="user1" finished-at="2024-10-25T09:18:59 IST" duration-ms="33184">
+      <class name="com.testng.demoproject.TestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testng.demoproject.TestCase@74e28667]" started-at="2024-10-25T09:18:26 IST" name="setup" finished-at="2024-10-25T09:18:30 IST" duration-ms="3701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerUserTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testng.demoproject.TestCase@74e28667]" started-at="2024-10-25T09:18:30 IST" name="registerUserTest" finished-at="2024-10-25T09:18:36 IST" duration-ms="5750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vdm11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vdm12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vdm14@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vdm111]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[vdm111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserTest -->
+        <test-method signature="signInTest(java.lang.String,java.lang.String)[pri:1, instance:com.testng.demoproject.TestCase@74e28667]" started-at="2024-10-25T09:18:36 IST" name="signInTest" data-provider="getUserSignInData" finished-at="2024-10-25T09:18:45 IST" duration-ms="9102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vdm14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vdm111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInTest -->
+        <test-method signature="SearchFunctionalityTest(java.lang.String)[pri:2, instance:com.testng.demoproject.TestCase@74e28667]" started-at="2024-10-25T09:18:45 IST" name="SearchFunctionalityTest" data-provider="getSearchData" finished-at="2024-10-25T09:18:50 IST" depends-on-methods="com.testng.demoproject.TestCase.signInTest" duration-ms="5118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Computing and Internet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchFunctionalityTest -->
+        <test-method signature="SearchFunctionalityTest(java.lang.String)[pri:2, instance:com.testng.demoproject.TestCase@74e28667]" started-at="2024-10-25T09:18:50 IST" name="SearchFunctionalityTest" data-provider="getSearchData" finished-at="2024-10-25T09:18:55 IST" depends-on-methods="com.testng.demoproject.TestCase.signInTest" duration-ms="4991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Computing and Internet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchFunctionalityTest -->
+        <test-method signature="addToCartTest()[pri:3, instance:com.testng.demoproject.TestCase@74e28667]" started-at="2024-10-25T09:18:55 IST" name="addToCartTest" finished-at="2024-10-25T09:18:59 IST" depends-on-methods="com.testng.demoproject.TestCase.SearchFunctionalityTest" duration-ms="4139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.demoproject.TestCase@74e28667]" started-at="2024-10-25T09:18:59 IST" name="tearDown" finished-at="2024-10-25T09:18:59 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.demoproject.TestCase -->
+    </test> <!-- user1 -->
+    <test started-at="2024-10-25T09:18:59 IST" name="user2" finished-at="2024-10-25T09:19:30 IST" duration-ms="30457">
+      <class name="com.testng.demoproject.TestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testng.demoproject.TestCase@3e08ff24]" started-at="2024-10-25T09:18:59 IST" name="setup" finished-at="2024-10-25T09:19:01 IST" duration-ms="1834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerUserTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testng.demoproject.TestCase@3e08ff24]" started-at="2024-10-25T09:19:01 IST" name="registerUserTest" finished-at="2024-10-25T09:19:08 IST" duration-ms="6851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vdm11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vdm12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vdm15@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vdm111]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[vdm111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserTest -->
+        <test-method signature="signInTest(java.lang.String,java.lang.String)[pri:1, instance:com.testng.demoproject.TestCase@3e08ff24]" started-at="2024-10-25T09:19:08 IST" name="signInTest" data-provider="getUserSignInData" finished-at="2024-10-25T09:19:15 IST" duration-ms="7227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vdm14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vdm111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInTest -->
+        <test-method signature="SearchFunctionalityTest(java.lang.String)[pri:2, instance:com.testng.demoproject.TestCase@3e08ff24]" started-at="2024-10-25T09:19:15 IST" name="SearchFunctionalityTest" data-provider="getSearchData" finished-at="2024-10-25T09:19:20 IST" depends-on-methods="com.testng.demoproject.TestCase.signInTest" duration-ms="5171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Computing and Internet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchFunctionalityTest -->
+        <test-method signature="SearchFunctionalityTest(java.lang.String)[pri:2, instance:com.testng.demoproject.TestCase@3e08ff24]" started-at="2024-10-25T09:19:20 IST" name="SearchFunctionalityTest" data-provider="getSearchData" finished-at="2024-10-25T09:19:25 IST" depends-on-methods="com.testng.demoproject.TestCase.signInTest" duration-ms="4997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Computing and Internet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchFunctionalityTest -->
+        <test-method signature="addToCartTest()[pri:3, instance:com.testng.demoproject.TestCase@3e08ff24]" started-at="2024-10-25T09:19:25 IST" name="addToCartTest" finished-at="2024-10-25T09:19:30 IST" depends-on-methods="com.testng.demoproject.TestCase.SearchFunctionalityTest" duration-ms="4128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.demoproject.TestCase@3e08ff24]" started-at="2024-10-25T09:19:30 IST" name="tearDown" finished-at="2024-10-25T09:19:30 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.demoproject.TestCase -->
+    </test> <!-- user2 -->
+  </suite> <!-- Suite -->
+</testng-results>

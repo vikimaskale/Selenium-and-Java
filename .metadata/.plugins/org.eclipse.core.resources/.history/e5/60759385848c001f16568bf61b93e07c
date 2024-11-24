@@ -1,0 +1,7 @@
+package com.courierServiceManagement.entity;
+
+public interface ICourierUserService {
+	public long placeOrder();
+	public String getOrderStatus();
+	public boolean cancelOrder();
+}

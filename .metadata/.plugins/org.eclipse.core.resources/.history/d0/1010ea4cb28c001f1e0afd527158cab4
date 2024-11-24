@@ -1,0 +1,27 @@
+package com.courierServiceManagement.main;
+
+import java.util.ArrayList;
+
+import com.courierServiceManagement.dao.*;
+import com.courierServiceManagement.entity.*;
+
+public class MainMod {
+	public static void main(String[] args) {
+		
+		//creating company 
+		CourierCompany companyObj=new CourierCompany("hexaware", new ArrayList<>(),
+				new ArrayList<>(), new ArrayList<>());
+		
+		//creating employees
+		Employee employee1= new Employee(501, "Sai", "sai@gmail.com", 9923492620L, "driver", 2000);
+		
+		
+		//creating admin services
+		CourierAdminServiceImpl adminService= new CourierAdminServiceImpl();
+		adminService.addCourierStaff(null);
+		
+		//adding employees
+		
+		
+	}
+}
